@@ -27,4 +27,9 @@ h5 {
   h5 a#andrew:hover::after {
     content: " (Portfolio)"; }
 
+p {
+  color: #748cab;
+  font-family: 'Inter';
+  font-weight: 400; }
+
 /*# sourceMappingURL=style.css.map */
