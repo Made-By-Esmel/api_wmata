@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.gh
     pkgs.sass
     pkgs.sass
     pkgs.nodejs-16_x

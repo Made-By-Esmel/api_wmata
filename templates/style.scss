@@ -1,18 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
 
 $richblack: #0D1321;
 $prussianblue: #1d2d44;
 $electricblue: #3e5c76;
 $shadowblue: #748cab;
 $floralwhite: #f9f7f0;
-
-$pri-color: black;
-
-
-body {
-  background-color: $richblack;
-
-  >h1 {
     
+body {
+  background-color: $richblack; 
+}
+    
+h1 {
+  color: $floralwhite;
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 150%;
+}
+
+h5 {
+  color: $shadowblue;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 150%;
+
+  a {
+    color: $electricblue;
+    font-family: 'Inter';
+    font-weight: 500;
+    // font-size: 150%;
+    text-decoration: underline;
+    text-decoration-color: $electricblue
   }
 }
+ 
