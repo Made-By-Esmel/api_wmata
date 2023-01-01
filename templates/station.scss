@@ -14,6 +14,11 @@ $yellow-green: #d0e37f;
 // Extra colors
 $darker-black: #080708;
 $platinum: #E6E8E6;
+$green-munsell: #06a77d; //use for arr ONLY
+
+// Line Colors
+$rose-madder: #DF2935; // Red
+
 
 body {
     background-color: $raisin-black;
@@ -31,4 +36,18 @@ h1 {
         border-radius: 3px;
         padding: 3px 3px;
     }
+}
+
+table {
+  width: 50%;
+  font-family: 'Inter', sans-serif;
+  color: $platinum;
+  td .unit {
+    font-size: 60%;
+    font-family: 'Menlo', monospace;
+    color: $gold;
+  }
+  img.red-line .st0 {
+    fill: $rose-madder !important;
+  }
 }
