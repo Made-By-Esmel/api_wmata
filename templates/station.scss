@@ -22,6 +22,7 @@ h1 {
         font-family: 'Menlo';
         font-feature-settings: "zero", "ss01";
         color: $copper-red;
-        background-color: mix($color: $raisin-black, $color: $cafe-noir, $weight: 0.35);
+        background-color: mix($raisin-black, $cafe-noir, $weight: 0.35);
+        border-radius: 3px;
     }
 }
