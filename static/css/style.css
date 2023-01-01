@@ -24,5 +24,7 @@ h5 {
     text-decoration-color: #748cab; }
   h5 a:hover::after {
     content: " (GitHub)"; }
+  h5 a#andrew:hover::after {
+    content: " (Portfolio)"; }
 
 /*# sourceMappingURL=style.css.map */

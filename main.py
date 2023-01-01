@@ -25,7 +25,7 @@ def index():
 
 @app.route('/hello')
 def hello():
-    return 'Whatever you want'
+    return 'Hey there!'
 
 
 # In the future, this should expect parameters
