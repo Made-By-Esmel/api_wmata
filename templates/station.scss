@@ -17,6 +17,6 @@ h1 {
         font-family: 'Inter', monospace;
         font-feature-settings: "zero", "ss01";
         color: $copper-red;
-      background-color: mi
+        background-color: mix($color: $raisin-black, $color: $cafe-noir, $weight: 0.35);
     }
 }
