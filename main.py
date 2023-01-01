@@ -72,4 +72,9 @@ def makeStationHTML(name):
   except KeyError:
     return render_template('station.html', station="Invalid", station_code="XXX")
 
+@app.route('./backend/station/<string:code>')
+def backendDataGather(code):
+  pass
+
+
 app.run(host='0.0.0.0', port=81)

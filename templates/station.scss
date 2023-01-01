@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+
+$raisin-black: #221d23;
+$cafe-noir: #4f3824;
+$copper-red: #d1603d;
+$gold: #ddb967;
+$yellow-green: #d0e37f;
+
+body {
+    background-color: $raisin-black;
+}
+
+h1 {
+    font-family: 'Inter';
+    color: $yellow-green;
+    code {
+        font-feature-settings: "zero", "ss01";
+        background-color: $cafe-noir;
+        color: $copper-red;
+    }
+}
