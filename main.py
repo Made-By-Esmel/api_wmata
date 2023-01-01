@@ -7,7 +7,7 @@ import requests
 
 
 def getIdFromStationName(station_name: str) -> str:
-    id_file = json.load(open('./stations.json', 'r'))['stations']
+    id_file = json.load(open('stations.json', 'r'))['stations']
     return id_file[station_name]
 
 
@@ -72,7 +72,7 @@ def makeStationHTML(name):
   except KeyError:
     return render_template('station.html', station="Invalid", station_code="XXX")
 
-@app.route('./backend/station/<string:code>')
+@app.route('/backend/station/<string:code>')
 def backendDataGather(code):
   pass
 

@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAQ,+FAAuF;AAQ/F,IAAK;EACD,gBAAgB,EAPL,OAAO;;AAUtB,EAAG;EACC,WAAW,EAAE,OAAO;EACpB,KAAK,EARM,OAAO;EASlB,OAAK;IACD,WAAW,EAAE,kBAAkB;IAC/B,qBAAqB,EAAE,cAAc;IACrC,KAAK,EAdA,OAAO",
+"sources": ["../../templates/station.scss"],
 "names": [],
 "file": "station.css"
 }

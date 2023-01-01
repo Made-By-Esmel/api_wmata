@@ -14,8 +14,9 @@ h1 {
     font-family: 'Inter';
     color: $yellow-green;
     code {
+        font-family: 'Inter', monospace;
         font-feature-settings: "zero", "ss01";
-        background-color: $cafe-noir;
         color: $copper-red;
+      background-color: mi
     }
 }
