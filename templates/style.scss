@@ -42,6 +42,10 @@ h5 {
     content: " (GitHub)";
   }
 
+  a#andrew:hover::after {
+    content: " (Portfolio)";
+  }
+
   
 }
  
