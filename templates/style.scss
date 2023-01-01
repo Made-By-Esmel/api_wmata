@@ -5,7 +5,8 @@ $prussianblue: #1d2d44;
 $electricblue: #3e5c76;
 $shadowblue: #748cab;
 $floralwhite: #f9f7f0;
-    
+$underline-delay: 300ms;
+
 body {
   background-color: $richblack; 
 }
@@ -29,7 +30,12 @@ h5 {
     font-weight: 500;
     // font-size: 150%;
     text-decoration: underline;
-    text-decoration-color: $electricblue
+    text-decoration-color: $electricblue;
+    transition: $underline-delay;
+  }
+
+  a:hover {
+    text-decoration-color: $shadowblue;
   }
 }
  
