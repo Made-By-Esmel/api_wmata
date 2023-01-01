@@ -1,5 +1,8 @@
 { pkgs }: {
   deps = [
+    pkgs.sass
+    pkgs.sass
+    pkgs.nodejs-16_x
     pkgs.python38Full
   ];
   env = {
