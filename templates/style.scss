@@ -37,5 +37,9 @@ h5 {
   a:hover {
     text-decoration-color: $shadowblue;
   }
+
+  a:hover::after {
+    content: "(GitHub)";
+  }
 }
  
