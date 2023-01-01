@@ -27,5 +27,7 @@ table {
     color: #ddb967; }
   table img.red-line .st0 {
     fill: #DF2935 !important; }
+  table td.dest1::before {
+    content: '<'; }
 
 /*# sourceMappingURL=station.css.map */

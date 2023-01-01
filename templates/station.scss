@@ -50,4 +50,7 @@ table {
   img.red-line .st0 {
     fill: $rose-madder !important;
   }
+  td.dest1::before {
+    content: '<';
+  }
 }
