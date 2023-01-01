@@ -32,4 +32,16 @@ p {
   font-family: 'Inter';
   font-weight: 400; }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0D1321; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #3e5c76; }
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #748cab; }
+
 /*# sourceMappingURL=style.css.map */

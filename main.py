@@ -7,7 +7,7 @@ import requests
 
 
 def getIdFromStationName(station_name: str) -> str:
-    id_file = json.load('./stations.json')['stations']
+    id_file = json.load(open('./stations.json', 'r'))['stations']
     return id_file[station_name]
 
 
@@ -64,5 +64,12 @@ def nextFiveLines(code):
   </style>
   <p>''' + out_str + '</p>'
 
+@app.route('/station/<string:name>')
+def makeStationHTML(name):
+  try:
+    code = getIdFromStationName(name)
+    return render_template('station.html', station=name, station_code=code)
+  except KeyError:
+    return render_template('station.html', station="Invalid", station_code="XXX")
 
 app.run(host='0.0.0.0', port=81)
