@@ -16,6 +16,13 @@ h5 {
   h5 a {
     color: #3e5c76;
     font-family: 'Inter';
-    font-weight: 500; }
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #3e5c76;
+    transition: 300ms; }
+  h5 a:hover {
+    text-decoration-color: #748cab; }
+  h5 a:hover::after {
+    content: " (GitHub)"; }
 
 /*# sourceMappingURL=style.css.map */
