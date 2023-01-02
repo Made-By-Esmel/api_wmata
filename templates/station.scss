@@ -19,17 +19,23 @@ $green-munsell: #06a77d; //use for arr ONLY
 // Line Colors
 $rose-madder: #DF2935; // Red
 
-
 body {
     background-color: $raisin-black;
 }
 
 h1 {
     font-family: 'Inter';
+    font-size: 2.5em;
     color: $yellow-green;
-    code {
+    text-align: center;
+    margin-bottom: -10px;
+}
+h2 {
+  text-align: center;
+  code {
         font-family: 'Menlo';
-        font-size: 75%;
+        // text-align: center;
+        font-size: 1em;
         font-feature-settings: "zero", "ss01";
         color: $copper-red;
         background-color: mix($raisin-black, $cafe-noir, $weight: 0.2);
@@ -40,8 +46,32 @@ h1 {
 
 table {
   width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  //top: 20%;
   font-family: 'Inter', sans-serif;
   color: $platinum;
+  border-collapse: collapse;
+
+  // th:not(:last-child),
+  td:not(:last-child) {
+    border-right: 1px solid $platinum;
+  }
+
+  td:not(:first-child),
+  th:not(:first-child), {
+    padding-left: 5px;
+  }
+
+  th {
+    padding-bottom: 10px;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
   td .unit {
     font-size: 60%;
     font-family: 'Menlo', monospace;
@@ -51,6 +81,26 @@ table {
     fill: $rose-madder !important;
   }
   td.dest1::before {
-    content: '<';
+    content: '';
   }
+
+  td.ARR {
+    color: $green-munsell !important;
+  }
+
+  td.BRD {
+    color: $gold;
+  }
+
+  td span.unit:empty {
+    display: none;
+  }
+  // tr {
+  //   padding-bottom: 50px;
+  // }
+
+}
+
+body * {
+  user-select: none;
 }

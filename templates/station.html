@@ -4,29 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/static/css/station.css">
-  <script src="/static/js/rotate.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <title>{{station}} - {{station_code}}</title>
+  <meta http-equiv="refresh" content="10">
+  <link rel="icon" href="/static/favicon.ico">
+  <link rel="stylesheet" href="/static/css/station_min.css">
+<!--   <script src="/static/js/rotate.js"></script> -->
+  <title>{{station}} - {{city}}</title>
 </head>
 <body>
-  <h1>{{station}} <code id="station-code">{{station_code}}</code></h1>
+  <h1>{{station}}</h1>
+  <h2><code id="station-code">{{city}}</code></h2>
   <table>
     <tr>
       <th>Line</th>
-      <th><span class="material-symbols-outlined">
-sync_alt
-</span> Destination</th>
+      <th>Destination</th>
       <th>Time</th>
       <th>Cars</th>
       <th>Occupancy</th>
     </tr>
     <tr>
-      <td><img class="red-line" src="../static/svg/WMATA_Red.svg" width="16px" alt="Red Line"></td>
-      <td class="dest1">Shady Grove</td>
-      <td>3 <span class="unit">MIN</span></td>
-      <td>8</td>
-      <td>Empty</td>
+      <td><img class="red-line" src="../static/svg/{{line1}}" width="16px"></td>
+      <td class="dest1">{{dest1}}</td>
+      <td class="{{time1}}">{{time1}} <span class="unit">{{unit1}}</span></td>
+      <td>{{cars1}}</td>
+      <td>{{occu1}}</td>
+    </tr>
+
+    <tr>
+      <td><img class="red-line" src="../static/svg/{{line2}}" width="16px"></td>
+      <td class="dest2">{{dest2}}</td>
+      <td class="{{time2}}">{{time2}} <span class="unit">{{unit2}}</span></td>
+      <td>{{cars2}}</td>
+      <td>{{occu2}}</td>
+    </tr>
+
+    <tr>
+      <td><img class="red-line" src="../static/svg/{{line3}}" width="16px"></td>
+      <td class="dest3">{{dest3}}</td>
+      <td class="{{time3}}">{{time3}} <span class="unit">{{unit3}}</span></td>
+      <td>{{cars3}}</td>
+      <td>{{occu3}}</td>
     </tr>
   </table>
 </body>

@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.minify
     pkgs.gh
     pkgs.sass
     pkgs.sass
