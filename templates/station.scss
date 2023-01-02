@@ -60,7 +60,7 @@ table {
   }
 
   td:not(:first-child),
-  th:not(:first-child), {
+  th:not(:first-child) {
     padding-left: 5px;
   }
 
@@ -99,9 +99,6 @@ table {
   //   padding-bottom: 50px;
   // }
 
-  td[data-first-char='-'] {
-    color: #000;
-  }
 }
 
 body * {
