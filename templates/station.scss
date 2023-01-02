@@ -99,6 +99,9 @@ table {
   //   padding-bottom: 50px;
   // }
 
+  td[data-first-char='-'] {
+    color: #000;
+  }
 }
 
 body * {

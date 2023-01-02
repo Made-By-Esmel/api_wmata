@@ -1,5 +1,3 @@
-document.addEventListener("rotate", ev => {
-    if (ev.direction) {
-        document.querySelector("body").style.backgroundColor = "#FFFFFF";
-    }
-});
+let rawText = document.getElementById("rawData").innerText;
+let station = JSON.parse(rawText);
+console.log(station)

@@ -54,6 +54,8 @@ table {
     color: #ddb967; }
   table td span.unit:empty {
     display: none; }
+  table td[data-first-char='-'] {
+    color: #000; }
 
 body * {
   user-select: none; }

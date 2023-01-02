@@ -84,9 +84,11 @@ def makeStationHTML(name):
   try:
     code = getIdFromStationName(name)
     city = getCityFromStationName(name)
-    station_json = requests.get(
+    rq = requests.get(
         f'https://www.wmata.com/components/stations.cfc?method=getNextTrains&StationCode={code}&returnFormat=JSON&_={int(time.time())}'
-    ).json()["TRAINS"]
+    )
+    station_json = rq.json()["TRAINS"]
+    raw = rq.text
 
     
     train1 = station_json[0]
@@ -132,7 +134,7 @@ def makeStationHTML(name):
     cars3 = train3['Car']
     occu3 = train3['Oc']
     
-    return render_template('station.html', station=name, city=city, station_code=code, line1=line1+".svg", dest1=dest1, time1=time1, unit1=unit1, cars1=cars1, occu1=OCCU_MAP_STR[occu1], line2=line2+".svg", dest2=dest2, time2=time2, unit2=unit2, cars2=cars2, occu2=OCCU_MAP_STR[occu2], line3=line3+".svg", dest3=dest3, time3=time3, unit3=unit3, cars3=cars3, occu3=OCCU_MAP_STR[occu3])
+    return render_template('station.html', station=name, city=city, station_code=code, line1=line1+".svg", dest1=dest1, time1=time1, unit1=unit1, cars1=cars1, occu1=OCCU_MAP_STR[occu1], line2=line2+".svg", dest2=dest2, time2=time2, unit2=unit2, cars2=cars2, occu2=OCCU_MAP_STR[occu2], line3=line3+".svg", dest3=dest3, time3=time3, unit3=unit3, cars3=cars3, occu3=OCCU_MAP_STR[occu3], data_raw=raw)
   except KeyError:
     return render_template('station.html', station="This Station Doesn't Exist", station_code=":/", line1="SAD.svg", dest1="Whoville", time1="Later?", cars1="i", occu1="idk", line2="SAD.svg")
 
