@@ -64,14 +64,19 @@ function renderJSON() {
         occuCol.innerText = occupancyStr[train_data.Oc];
 
         let trainRow = document.createElement('tr');
+        trainRow.id = `train-${train}`;
         trainRow.append(imgCol);
         trainRow.append(destCol);
         trainRow.append(timeCol);
         trainRow.append(carsCol);
         trainRow.append(occuCol);
 
-        // Comment out this line if something breaks
-        document.getElementById('trains').append(trainRow);
+        if (document.getElementById(`train-${train}`)) {
+            // Comment out this line if something breaks
+            document.getElementById(`train-${train}`).replaceWith(trainRow);
+        } else {
+            document.getElementById('trains').append(trainRow);
+        }
 
     }
 }
