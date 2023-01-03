@@ -7,6 +7,15 @@
     src: url(/static/ttf/Menlo-Regular.ttf);
 }
 
+@keyframes pop {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: $raisin-black;
+    }
+}
+
 // Theme Colors
 $raisin-black: #221d23;
 $cafe-noir: #4f3824;
@@ -108,8 +117,14 @@ table {
         color: $gold;
     }
 
+    tr {
+        background-color: $raisin-black;
+        animation: pop 200ms linear;
+    }
+
 }
 
 body * {
     user-select: none;
 }
+
