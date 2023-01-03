@@ -11,7 +11,7 @@ const occupancyStr = [
 ]
 
 for (train in station.TRAINS) {
-
+    let train_data = station.TRAINS[train];
     // Render only one row per group    
     console.log(addedGroups);
     if (addedGroups.includes(station.TRAINS[train].Group)) {

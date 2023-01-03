@@ -29,6 +29,7 @@ h5 {
     font-family: 'Inter';
     font-weight: 500;
     // font-size: 150%;
+    cursor: pointer;
     text-decoration: underline;
     text-decoration-color: $electricblue;
     transition: $underline-delay;
@@ -37,8 +38,8 @@ h5 {
   a:hover {
     text-decoration-color: $shadowblue;
   }
-
-  a:#markian:hover::after {
+  
+  a#markian:hover::after {
     content: " (GitHub)";
   }
 

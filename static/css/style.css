@@ -1,48 +1,48 @@
-/*
-Error: Invalid CSS after "  a:#markian": expected ";", was ":hover::after {"
-        on line 41 of ./templates/style.scss
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+body {
+  background-color: #0D1321; }
 
-36: 
-37:   a:hover {
-38:     text-decoration-color: $shadowblue;
-39:   }
-40: 
-41:   a:#markian:hover::after {
-42:     content: " (GitHub)";
-43:   }
-44: 
-45:   a#andrew:hover::after {
-46:     content: " (Portfolio)";
+h1 {
+  color: #f9f7f0;
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 150%; }
 
-Backtrace:
-./templates/style.scss:41
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/nix/store/9lzk5blrdxywpv3kmhwxh4qp1qpfz7gc-ruby2.7.5-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/nix/store/495ki5apafmbi8d2mrw06wp9j7xr86q0-sass-3.7.4/lib/ruby/gems/2.7.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/nix/store/jyas5ldjnv5796x9m56b2svy2jzi9w6y-sass-3.7.4/bin/sass:21:in `load'
-/nix/store/jyas5ldjnv5796x9m56b2svy2jzi9w6y-sass-3.7.4/bin/sass:21:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  a:#markian\": expected \";\", was \":hover::after {\"\A         on line 41 of ./templates/style.scss\A \A 36: \A 37:   a:hover {\A 38:     text-decoration-color: $shadowblue;\A 39:   }\A 40: \A 41:   a:#markian:hover::after {\A 42:     content: \" (GitHub)\";\A 43:   }\A 44: \A 45:   a#andrew:hover::after {\A 46:     content: \" (Portfolio)\";"; }
+h5 {
+  color: #748cab;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 150%; }
+  h5 a {
+    color: #3e5c76;
+    font-family: 'Inter';
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #3e5c76;
+    transition: 300ms; }
+  h5 a:hover {
+    text-decoration-color: #748cab; }
+  h5 a#markian:hover::after {
+    content: " (GitHub)"; }
+  h5 a#andrew:hover::after {
+    content: " (Portfolio)"; }
+
+p {
+  color: #748cab;
+  font-family: 'Inter';
+  font-weight: 400; }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0D1321; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #3e5c76; }
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #748cab; }
+
+/*# sourceMappingURL=style.css.map */
