@@ -87,56 +87,13 @@ def makeStationHTML(name):
     rq = requests.get(
         f'https://www.wmata.com/components/stations.cfc?method=getNextTrains&StationCode={code}&returnFormat=JSON&_={int(time.time())}'
     )
-    station_json = rq.json()["TRAINS"]
+    # station_json = rq.json()["TRAINS"]
     raw = rq.text
 
     
-    train1 = station_json[0]
-    line1 = train1['Line']
-    dest1 = train1['Destination']
-    time1 = train1['Min']
-    unit1 = formatUnits(time1)
-    cars1 = train1['Car']
-    occu1 = train1['Oc']
-
-    try:
-      a = 1
-      while station_json[a]['Group'] <= station_json[0]['Group'] + 0:
-        a += 1
-    except IndexError:
-      a = 1
-      while station_json[a]['Group'] == station_json[0]['Group']:
-        a += 1
-    train2 = station_json[a]
-    line2 = train2['Line']
-    dest2 = train2['Destination']
-    time2 = train2['Min']
-    unit2 = formatUnits(time2)
-    cars2 = train2['Car']
-    occu2 = train2['Oc']
-
-    try:
-      b = a + 1
-      while station_json[b]['Group'] <= station_json[a]['Group'] + 1:
-        b += 1
-    except IndexError:
-      try: 
-        b = a + 1
-        while station_json[b]['Group'] == station_json[a]['Group']:
-          b += 1
-      except IndexError:
-        b = a
-    train3 = station_json[b]
-    line3 = train3['Line']
-    dest3 = train3['Destination']
-    time3 = train3['Min']
-    unit3 = formatUnits(time3)
-    cars3 = train3['Car']
-    occu3 = train3['Oc']
-    
-    return render_template('station.html', station=name, city=city, station_code=code, line1=line1+".svg", dest1=dest1, time1=time1, unit1=unit1, cars1=cars1, occu1=OCCU_MAP_STR[occu1], line2=line2+".svg", dest2=dest2, time2=time2, unit2=unit2, cars2=cars2, occu2=OCCU_MAP_STR[occu2], line3=line3+".svg", dest3=dest3, time3=time3, unit3=unit3, cars3=cars3, occu3=OCCU_MAP_STR[occu3], data_raw=raw)
+    return render_template('station.html', station=name, city=city, station_code=code, data_raw=raw)
   except KeyError:
-    return render_template('station.html', station="This Station Doesn't Exist", station_code=":/", line1="SAD.svg", dest1="Whoville", time1="Later?", cars1="i", occu1="idk", line2="SAD.svg")
+    return render_template('station.html', station="This Station Doesn't Exist", station_code=":/")
 
 @app.route('/backend/station/<string:code>')
 def backendDataGather(code):
