@@ -56,7 +56,7 @@ table {
   table td.BRD {
     color: #ddb967; }
 
-body *:not(#destination) {
+body * {
   user-select: none; }
 
 /*# sourceMappingURL=station.css.map */

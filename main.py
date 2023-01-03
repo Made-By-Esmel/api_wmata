@@ -50,7 +50,7 @@ def makeStationHTML(name):
         rq = requests.get(makeRequestURL(code))
         # station_json = rq.json()["TRAINS"]
         raw = rq.text
-        return render_template('station.html', station=name, city=city, station_code=code, data_raw=raw)
+        return render_template('station.html', station=name, city=city, station_code=code, data_raw=raw, station_id=code)
     except KeyError:
         return render_template('station.html', station="Whoops! That Station Doesn't Exist", station_code=":/")
 

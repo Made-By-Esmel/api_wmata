@@ -1,13 +1,17 @@
 function updateJSONAndDump() {
+
+    let station_code = document.getElementById("stationId").innerText;
+    
     let xhr = new XMLHttpRequest();
-    xhr.open();
+    xhr.open('GET', `https://api.esmel.xyz/backend/station/${station_code}`);
     xhr.send();
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            console.log(xhr.responseText);
+            // console.log(xhr.responseText);
+            document.getElementById("rawData").innerText = xhr.responseText;
         } else {
-            console.log("something went wrong")
+            console.log("something went wrong");
         }
     }
 }
@@ -72,4 +76,7 @@ function renderJSON() {
     }
 }
 
-updateJSONAndDump()
+function renderProcess() {
+    updateJSONAndDump();
+    renderJSON();
+}
