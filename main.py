@@ -28,7 +28,7 @@ def getCityFromStationName(station_name: str) -> str:
         return id_file[station_name]
 
 app = Flask(__name__)
-FlaskJSON(app)
+# FlaskJSON(app)
 app.config["JSON_ADD_STATUS"] = False
 
 
