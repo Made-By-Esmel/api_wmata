@@ -7,5 +7,5 @@
 - [x] Make `json.load()` calls with context management.
 - [ ] (1/1/2023) **IMPORTANT** Add filtering by time to station (i.e BRD is top and 59mins is last always.)
 - [ ] Grey out the dashes if the \# of cars returns `-`
-- [ ] Optimize the JS indexing
+- [x] Optimize the JS indexing
 - [x] Add pointer to links
