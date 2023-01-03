@@ -76,6 +76,8 @@ function renderJSON() {
     }
 }
 
+renderJSON();
+
 setInterval(
     function() {
         updateJSONAndDump();
