@@ -76,7 +76,9 @@ function renderJSON() {
     }
 }
 
-function renderProcess() {
-    updateJSONAndDump();
-    renderJSON();
-}
+setInterval(
+    function() {
+        updateJSONAndDump();
+        renderJSON();
+    }, 10 * 1000
+);
