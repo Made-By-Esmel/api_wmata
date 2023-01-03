@@ -27,6 +27,8 @@ h5 {
     content: " (GitHub)"; }
   h5 a#andrew:hover::after {
     content: " (Portfolio)"; }
+  h5 a#sham:hover::after {
+    content: " (Replit)"; }
 
 p {
   color: #748cab;

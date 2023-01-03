@@ -7,6 +7,7 @@
     src: url(/static/ttf/Menlo-Regular.ttf);
 }
 
+// Theme Colors
 $raisin-black: #221d23;
 $cafe-noir: #4f3824;
 $copper-red: #d1603d;
@@ -21,8 +22,7 @@ $green-munsell: #06a77d; //use for arr ONLY
 // Line Colors
 $rose-madder: #DF2935; // Red
 
-
-// fonts
+// Fonts
 $inter: 'Inter';
 $menlo: 'Menlo';
 $martian: 'Martian Mono';
@@ -30,7 +30,7 @@ $martian: 'Martian Mono';
 
 body { 
     background-color: $raisin-black;
-  }
+}
 
 h1 {
     font-family: $inter;
@@ -39,10 +39,11 @@ h1 {
     text-align: center;
     margin-bottom: -10px;
 }
+    
 h2 {
     text-align: center;
     code {
-        font-family: $martian;
+        font-family: $martian, monospace;
         // text-align: center;
         font-size: 1em;
         font-feature-settings: "zero", "ss01";
@@ -79,10 +80,15 @@ table {
   
     td {
         text-align: center;
+        
         .unit {
             font-size: 60%;
             font-family: $martian, monospace;
             color: $gold;
+        }
+        
+        span.unit:empty {
+            display: none;
         }
     }
   
@@ -90,27 +96,20 @@ table {
         fill: $rose-madder !important;
     }
  
-     td.dest1::before {
-    content: '';
-  }
+    td.dest1::before {
+        content: '';
+    }
 
-  td.ARR {
-    color: $green-munsell !important;
-  }
+    td.ARR {
+        color: $green-munsell !important;
+    }
 
-  td.BRD {
-    color: $gold;
-  }
-
-  td span.unit:empty {
-    display: none;
-  }
-  // tr {
-  //   padding-bottom: 50px;
-  // }
+    td.BRD {
+        color: $gold;
+    }
 
 }
 
-body * {
-  user-select: none;
+body *:not(#destination) {
+    user-select: none;
 }

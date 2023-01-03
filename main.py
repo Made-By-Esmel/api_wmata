@@ -12,9 +12,10 @@ def formatUnits(mins) -> str:
     return ""
 
 OCCU_MAP_STR = {
-    0: "Free",
-    1: "Busy",
-    2: "Full"
+    0: "No Data",
+    1: "Not Crowded",
+    2: "Somewhat Crowded",
+    3: "Full"
 }
 
 def getIdFromStationName(station_name: str) -> str:
@@ -51,7 +52,7 @@ def makeStationHTML(name):
         raw = rq.text
         return render_template('station.html', station=name, city=city, station_code=code, data_raw=raw)
     except KeyError:
-        return render_template('station.html', station="This Station Doesn't Exist", station_code=":/")
+        return render_template('station.html', station="Whoops! That Station Doesn't Exist", station_code=":/")
 
 # TODO: Add error handling
 @app.route('/backend/station/<string:code>')

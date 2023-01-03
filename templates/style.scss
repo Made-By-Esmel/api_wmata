@@ -47,6 +47,10 @@ h5 {
     content: " (Portfolio)";
   }
 
+  a#sham:hover::after {
+    content: " (Replit)";
+  }
+
 }
 
 p {

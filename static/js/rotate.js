@@ -1,3 +1,4 @@
+function renderJSON() {
 let rawText = document.getElementById("rawData").innerText;
 let station = JSON.parse(rawText);
 console.log(station)
@@ -5,8 +6,9 @@ console.log(station)
 let addedGroups = [0];
 
 const occupancyStr = [
-  "Empty",
-  "Busy",
+  "No Data",
+  "Not Crowded",
+  "Somewhat Crowded",
   "Full"
 ]
 
@@ -20,8 +22,8 @@ for (train in station.TRAINS) {
     addedGroups.push(train_data.Group);
   
     let img = document.createElement('img');
-    img.src = `../static/svg/${train_data.Line}.svg`;
-    img.width = 16;
+    img.src = `https://pub-e0e86bcdb20a447ea11d8706a676342f.r2.dev/${train_data.Line}.svg`;
+    img.width = 25; // Originally 16, however it was a tad too small, check functionality and it is all the same as before
     let imgCol = document.createElement('td');
     imgCol.append(img);
 
@@ -53,4 +55,5 @@ for (train in station.TRAINS) {
     // Comment out this line if something breaks
     document.getElementById('trains').append(trainRow);
 
+}
 }
