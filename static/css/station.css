@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;400;500;600;700;800&display=swap");
 @font-face {
   font-family: Menlo;
   src: url(/static/ttf/Menlo-Regular.ttf); }
@@ -15,7 +16,7 @@ h1 {
 h2 {
   text-align: center; }
   h2 code {
-    font-family: 'Menlo';
+    font-family: 'Martian Mono';
     font-size: 1em;
     font-feature-settings: "zero", "ss01";
     color: #d1603d;
@@ -42,7 +43,7 @@ table {
     text-align: center; }
   table td .unit {
     font-size: 60%;
-    font-family: 'Menlo', monospace;
+    font-family: 'Martian Mono', monospace;
     color: #ddb967; }
   table img.red-line .st0 {
     fill: #DF2935 !important; }
