@@ -38,7 +38,7 @@ h5 {
     text-decoration-color: $shadowblue;
   }
 
-  a:hover::after {
+  a:#markian:hover::after {
     content: " (GitHub)";
   }
 
