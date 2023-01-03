@@ -21,21 +21,28 @@ $green-munsell: #06a77d; //use for arr ONLY
 // Line Colors
 $rose-madder: #DF2935; // Red
 
-body {
+
+// fonts
+$inter: 'Inter';
+$menlo: 'Menlo';
+$martian: 'Martian Mono';
+
+
+body { 
     background-color: $raisin-black;
-}
+  }
 
 h1 {
-    font-family: 'Inter';
+    font-family: $inter;
     font-size: 2.5em;
     color: $yellow-green;
     text-align: center;
     margin-bottom: -10px;
 }
 h2 {
-  text-align: center;
-  code {
-        font-family: 'Martian Mono';
+    text-align: center;
+    code {
+        font-family: $martian;
         // text-align: center;
         font-size: 1em;
         font-feature-settings: "zero", "ss01";
@@ -47,42 +54,43 @@ h2 {
 }
 
 table {
-  width: 50%;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%,0);
-  //top: 20%;
-  font-family: 'Inter', sans-serif;
-  color: $platinum;
-  border-collapse: collapse;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    //top: 20%;
+    font-family: $inter, sans-serif;
+    color: $platinum;
+    border-collapse: collapse;
 
-  // th:not(:last-child),
-  td:not(:last-child) {
-    border-right: 1px solid $platinum;
-  }
+    // th:not(:last-child),
+    td:not(:last-child) {
+        border-right: 1px solid $platinum;
+    }
 
-  td:not(:first-child),
-  th:not(:first-child) {
-    padding-left: 5px;
-  }
+    td:not(:first-child),
+    th:not(:first-child) {
+        padding-left: 5px;
+    }
 
-  th {
-    padding-bottom: 10px;
-  }
+    th {
+        padding-bottom: 10px;
+    }
   
-  td {
-    text-align: center;
-  }
+    td {
+        text-align: center;
+        .unit {
+            font-size: 60%;
+            font-family: $martian, monospace;
+            color: $gold;
+        }
+    }
   
-  td .unit {
-    font-size: 60%;
-    font-family: 'Martian Mono', monospace;
-    color: $gold;
-  }
-  img.red-line .st0 {
-    fill: $rose-madder !important;
-  }
-  td.dest1::before {
+    img.red-line .st0 {
+        fill: $rose-madder !important;
+    }
+ 
+     td.dest1::before {
     content: '';
   }
 

@@ -1,0 +1,3 @@
+sass ./templates/style.scss  ./static/css/style.css
+
+sass ./templates/station.scss ./static/css/station.css

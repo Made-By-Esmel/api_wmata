@@ -7,7 +7,7 @@ body {
   background-color: #221d23; }
 
 h1 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2.5em;
   color: #d0e37f;
   text-align: center;
@@ -16,7 +16,7 @@ h1 {
 h2 {
   text-align: center; }
   h2 code {
-    font-family: 'Martian Mono';
+    font-family: "Martian Mono";
     font-size: 1em;
     font-feature-settings: "zero", "ss01";
     color: #d1603d;
@@ -29,7 +29,7 @@ table {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #E6E8E6;
   border-collapse: collapse; }
   table td:not(:last-child) {
@@ -41,10 +41,10 @@ table {
     padding-bottom: 10px; }
   table td {
     text-align: center; }
-  table td .unit {
-    font-size: 60%;
-    font-family: 'Martian Mono', monospace;
-    color: #ddb967; }
+    table td .unit {
+      font-size: 60%;
+      font-family: "Martian Mono", monospace;
+      color: #ddb967; }
   table img.red-line .st0 {
     fill: #DF2935 !important; }
   table td.dest1::before {

@@ -9,3 +9,6 @@
 - [ ] Grey out the dashes if the \# of cars returns `-`
 - [x] Optimize the JS indexing
 - [x] Add pointer to links
+- [ ] Take advantage of JS so we don't have to use the ~~hacky~~ CSS class selectors.
+
+markian, check the chat in repl top right i did
