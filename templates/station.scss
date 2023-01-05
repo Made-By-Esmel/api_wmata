@@ -7,14 +7,6 @@
     src: url(/static/ttf/Menlo-Regular.ttf);
 }
 
-@keyframes pop {
-    from {
-        background-color: white;
-    }
-    to {
-        background-color: $raisin-black;
-    }
-}
 
 // Theme Colors
 $raisin-black: #221d23;
@@ -37,6 +29,15 @@ $menlo: 'Menlo';
 $martian: 'Martian Mono';
 
 
+@keyframes pop {
+    from {
+        background-color: mix($raisin-black, white, $weight: 90%);
+    }
+    to {
+        background-color: $raisin-black;
+    }
+}
+
 body { 
     background-color: $raisin-black;
 }
@@ -57,7 +58,7 @@ h2 {
         font-size: 1em;
         font-feature-settings: "zero", "ss01";
         color: $copper-red;
-        background-color: mix($raisin-black, $cafe-noir, $weight: 0.2);
+        background-color: mix($raisin-black, $cafe-noir, $weight: 70%);
         border-radius: 3px;
         padding: 3px 3px;
     }
@@ -120,11 +121,8 @@ table {
     tr {
         background-color: $raisin-black;
         animation: pop 200ms linear;
+        border-radius: 3px;
+        height: 30.5px;
     }
 
 }
-
-body * {
-    user-select: none;
-}
-

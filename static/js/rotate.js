@@ -3,15 +3,16 @@ function updateJSONAndDump() {
     let station_code = document.getElementById("stationId").innerText;
     
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', `https://api.esmel.xyz/backend/station/${station_code}`);
+    xhr.open('GET', `https://api.dumbsheep123.repl.co/backend/station/${station_code}`);
     xhr.send();
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             // console.log(xhr.responseText);
             document.getElementById("rawData").innerText = xhr.responseText;
+            renderJSON();
         } else {
-            console.log("something went wrong");
+            console.log("Something Went Wrong");
         }
     }
 }
@@ -19,7 +20,7 @@ function updateJSONAndDump() {
 function renderJSON() {
     let rawText = document.getElementById("rawData").innerText;
     let station = JSON.parse(rawText);
-    console.log(station)
+    // console.log(station)
 
     let addedGroups = [0];
 
@@ -33,7 +34,7 @@ function renderJSON() {
     for (train in station.TRAINS) {
         let train_data = station.TRAINS[train];
         // Render only one row per group    
-        console.log(addedGroups);
+        // console.log(addedGroups);
         if (addedGroups.includes(train_data.Group)) {
         continue;
         }
@@ -41,7 +42,7 @@ function renderJSON() {
     
         let img = document.createElement('img');
         img.src = `https://pub-e0e86bcdb20a447ea11d8706a676342f.r2.dev/${train_data.Line}.svg`;
-        img.width = 25; // Originally 16, however it was a tad too small, check functionality and it is all the same as before
+        img.width = 25; // Originally 16
         let imgCol = document.createElement('td');
         imgCol.append(img);
 
@@ -62,6 +63,11 @@ function renderJSON() {
         
         let occuCol = document.createElement('td');
         occuCol.innerText = occupancyStr[train_data.Oc];
+        // let pg = document.createElement('progress')
+        // pg.max = 2;
+        // pg.value = train_data.Oc - 1 < 0 ? 0 : train_data.Oc - 1;
+        // pg.className = `pg-${train_data.Oc}`;
+        // occuCol.append(pg);
 
         let trainRow = document.createElement('tr');
         trainRow.id = `train-${train}`;
@@ -78,6 +84,7 @@ function renderJSON() {
             document.getElementById('trains').append(trainRow);
         }
 
+        // window.navigator.vibrate(50);
     }
 }
 
@@ -86,6 +93,6 @@ renderJSON();
 setInterval(
     function() {
         updateJSONAndDump();
-        renderJSON();
-    }, 10 * 1000
+        
+    }, 5 * 1000
 );
