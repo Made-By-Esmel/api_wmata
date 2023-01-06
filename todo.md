@@ -14,4 +14,5 @@
 - [ ] Add a feature to not overload the API so when the page is not in focus it will not update information
 - [ ] Add a thing at the bottom that updates every time it refresh the data to show the time it was last updated (i.e Last Updated: mm:dd:yyyy @ hh:mm:ss)
 - [ ] Add a dropdown menu at the bottom where you can select another station you would like to view
-- [x] Resized the images to load faster 
+- [x] Resized the images to load faster
+- [ ] Add links to the station names eg Virginia Square-GMU onlick event redirects to https://wmata.com/rider-guide/stations/virginia-sq.cfm
