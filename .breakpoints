@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "static/css/station.css": [
+      {
+        "id": "3e081e6b-0492-4ac6-9eff-f1ef6fda0d30",
+        "line": 6,
+        "version": 512,
+        "index": 272
+      }
+    ]
+  }
 }
