@@ -1,0 +1,36 @@
+form {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative; }
+  form input[type="text"] {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center; }
+  form .suggestions {
+    position: absolute;
+    width: 80%;
+    background-color: white;
+    border: 1px solid gray;
+    display: none; }
+    form .suggestions div {
+      padding: 10px;
+      border-bottom: 1px solid gray;
+      cursor: pointer; }
+      form .suggestions div:hover {
+        background-color: lightgray; }
+  form button {
+    width: 20%;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=search.css.map */

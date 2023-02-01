@@ -3,3 +3,5 @@ sass ./templates/style.scss  ./static/css/style.css
 sass ./templates/station.scss ./static/css/station.css
 
 sass ./templates/background.scss ./static/css/background.css
+
+sass ./templates/search.scss ./static/css/search.css

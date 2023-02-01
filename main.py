@@ -37,6 +37,13 @@ app.config["JSON_ADD_STATUS"] = False
 def index():
     return render_template("credits.html")
 
+@app.route('/search', methods=['GET'])
+def search():
+  return render_template("search.html")
+
+@app.route('/test', methods=['GET'])
+def test():
+  return render_template("test.html")
 
 @app.route('/hello')
 def hello():
