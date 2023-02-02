@@ -55,6 +55,26 @@ p {
   font-family: 'Inter';
   font-weight: 400; }
 
+a {
+  color: #3e5c76;
+  font-family: 'Inter';
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px transparent;
+  transition: 300ms; }
+
+a#search:hover {
+  text-shadow: 0px 0px 4px white;
+  color: white; }
+
+a#search:hover::after {
+  color: white; }
+
+a#search::after {
+  content: " to search for stations...";
+  color: #00000000;
+  transition: 300ms; }
+
 ::-webkit-scrollbar {
   width: 10px;
   background-color: #0D1321; }

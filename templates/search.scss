@@ -16,9 +16,11 @@ form {
     }
     
     .suggestions {
-        position: absolute;
-        width: 80%;
+        position: relative;
+        text-align: center;
+        vertical-align: center;
         background-color: white;
+        cursor: pointer;
         border: 1px solid gray;
         display: none;
     
