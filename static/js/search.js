@@ -38,7 +38,6 @@ input.addEventListener("input", async (event) => {
     suggestionsContainer.style.overflowY = 'auto';
     suggestionsContainer.style.marginTop = '10px';
     suggestionsContainer.style.fontFamily = 'Poppins';
-    suggestionsContainer.style.borderBottom = '1px solid gray';
     for (let i = 0; i < Math.min(suggestions.length, 5); i++) {
         var suggestion = suggestions[i];
         var suggestionElement = document.createElement("div");
