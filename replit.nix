@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.openssh_with_kerberos
     pkgs.minify
     pkgs.gh
     pkgs.sass

@@ -7,23 +7,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search For Stations</title>
-    <script src="/static/js/search.js"></script>
     <script src="/static/js/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/search.css">
-    <script src="https://api.dumbsheep123.repl.co/suggestions.json"></script>
 </head>
 
 <body>
-  <div class="search-container">
-  <form>
-    <input id="search-input" type="text">
-    <button id="search-button" type="submit">Enter</button>  
-    <div class="suggestions-bar"></div>
-  </form>
-  </div>
+    <form>
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown" required>
+            <option value="" disabled selected>Select One</option>
+            <option value="1">Addison Road-Seat Pleasant</option>
+            <option value="2">Anacostia</option>
+            <option value="3">Archives-Navy Memorial-Penn Quarter</option>
+            <option value="4">Arlington Cemetery</option>
+            <option value="5">Ashburn</option>
+            <option value="6">Ballston-MU</option>
+            <option value="7">Benning Road</option>
+            <option value="8">Bethesda</option>
+            <option value="9">Braddock Road</option>
+            <option value="10">Branch Ave</option>
+            <option value="11">Brookland-CUA</option>
+            <option value="12">Capitol Heights</option>
+            <option value="13">Capitol South</option>
+            <option value="14">Cheverly</option>
+            <option value="15">Clarendon</option>
+            <option value="16">Cleveland Park</option>
+            <option value="17">College Park-U of Md</option>
+            <option value="18">Columbia Heights</option>
+            <option value="19">Congress Heights</option>
+            <option value="20">Court House</option>
+            <option value="21">Crystal City</option>
+            <option value="22">Deanwood</option>
+            <option value="23">Downtown Largo</option>
+            <option value="24">Dunn Loring-Merrifield</option>
+            <option value="25">Dupont Circle</option>
+            <option value="26">East Falls Church</option>
+            <option value="27">Eastern Market</option>
+            <option value="28">Eisenhower Avenue</option>
+            <option value="29">Farragut North</option>
+            <option value="30">Farragut West</option>
+            <option value="31">Federal Center SW</option>
+            <option value="32">Federal Triangle</option>
+            <option value="33">Foggy Bottom-GWU</option>
+            <option value="34">Forest Glen</option>
+            <option value="35">Fort Totten</option>
+            <option value="36">Franconia-Springfield</option>
+            <option value="37">Friendship Heights</option>
+            <option value="38">Gallery Pl-Chinatown</option>
+            <option value="39">Georgia Ave-Petworth</option>
+            <option value="40">Glenmont</option>
+            <option value="41">Greenbelt</option>
+            <option value="42">Greensboro</option>
+            <option value="43">Grosvenor-Strathmore</option>
+            <option value="44">Herndon</option>
+            <option value="45">Huntington</option>
+            <option value="46">Hyattsville Crossing</option>
+            <option value="47">Innovation Center</option>
+            <option value="48">Judiciary Square</option>
+            <option value="49">King St-Old Town</option>
+            <option value="50">L'Enfant Plaza</option>
+            <option value="51">Landover</option>
+            <option value="52">Loudoun Gateway</option>
+            <option value="53">McLean</option>
+            <option value="54">McPherson Square</option>
+            <option value="55">Medical Center</option>
+            <option value="56">Metro Center</option>
+            <option value="57">Minnesota Ave</option>
+            <option value="58">Morgan Boulevard</option>
+            <option value="59">Mt Vernon Sq 7th St-Convention Center</option>
+            <option value="60">Navy Yard-Ballpark</option>
+            <option value="61">Naylor Road</option>
+            <option value="62">New Carrollton</option>
+            <option value="63">NoMa-Gallaudet U</option>
+            <option value="64">North Bethesda</option>
+            <option value="65">Pentagon</option>
+            <option value="66">Pentagon City</option>
+            <option value="67">Potomac Ave</option>
+            <option value="68">Reston Town Center</option>
+            <option value="69">Rhode Island Ave-Brentwood</option>
+            <option value="70">Rockville</option>
+            <option value="71">Ronald Reagan Washington National Airport</option>
+            <option value="72">Rosslyn</option>
+            <option value="73">Shady Grove</option>
+            <option value="74">Shaw-Howard U</option>
+            <option value="75">Silver Spring</option>
+            <option value="76">Silver Spring Transit Center</option>
+            <option value="77">Smithsonian</option>
+            <option value="78">Southern Avenue</option>
+            <option value="79">Spring Hill</option>
+            <option value="80">Stadium-Armory</option>
+            <option value="81">Suitland</option>
+            <option value="82">Takoma</option>
+            <option value="83">Tenleytown-AU</option>
+            <option value="84">Twinbrook</option>
+            <option value="85">Tysons</option>
+            <option value="86">U Street/African-Amer Civil War Memorial/Cardozo</option>
+            <option value="87">Union Station</option>
+            <option value="88">Van Dorn Street</option>
+            <option value="89">Van Ness-UDC</option>
+            <option value="90">Vienna/Fairfax-GMU</option>
+            <option value="91">Virginia Square-GMU</option>
+            <option value="92">Washington Dulles International Airport</option>
+            <option value="93">Waterfront</option>
+            <option value="94">West Falls Church</option>
+            <option value="95">West Hyattsville</option>
+            <option value="96">Wheaton</option>
+            <option value="97">Wiehle-Reston East</option>
+            <option value="98">Woodley Park-Zoo/Adams Morgan</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
 </body>
-
+<script src="/static/js/search.js"></script>
 </html>

@@ -85,11 +85,11 @@
         "Tenleytown-AU": "A07",
         "Twinbrook": "A13",
         "Tysons": "N02",
-        "U Street~African-Amer Civil War Memorial~Cardozo": "E03",
+        "U Street/African-Amer Civil War Memorial/Cardozo": "E03",
         "Union Station": "B03",
         "Van Dorn Street": "J02",
         "Van Ness-UDC": "A06",
-        "Vienna~Fairfax-GMU": "K08",
+        "Vienna/Fairfax-GMU": "K08",
         "Virginia Square-GMU": "K03",
         "Washington Dulles International Airport": "N10",
         "Waterfront": "F04",
@@ -97,7 +97,7 @@
         "West Hyattsville": "E07",
         "Wheaton": "B10",
         "Wiehle-Reston East": "N06",
-        "Woodley Park-Zoo~Adams Morgan": "A04"
+        "Woodley Park-Zoo/Adams Morgan": "A04"
     },
     "cities":{
         "Addison Road-Seat Pleasant": "Capitol Heights, MD",
@@ -185,11 +185,11 @@
         "Tenleytown-AU": "Washington, DC",
         "Twinbrook": "Rockville, MD",
         "Tysons": "McLean, VA",
-        "U Street~African-Amer Civil War Memorial~Cardozo": "Washington, DC",
+        "U Street/African-Amer Civil War Memorial/Cardozo": "Washington, DC",
         "Union Station": "Washington, DC",
         "Van Dorn Street": "Alexandria, VA",
         "Van Ness-UDC": "Washington, DC",
-        "Vienna~Fairfax-GMU": "Vienna, VA",
+        "Vienna/Fairfax-GMU": "Vienna, VA",
         "Virginia Square-GMU": "Arlington, VA",
         "Washington Dulles International Airport": "Sterling, VA",
         "Waterfront": "Washington, DC",
@@ -197,7 +197,6 @@
         "West Hyattsville": "Hyattsville, MD",
         "Wheaton": "Silver Spring, MD",
         "Wiehle-Reston East": "Reston, VA",
-        "Woodley Park-Zoo~Adams Morgan": "Washington, DC"
+        "Woodley Park-Zoo/Adams Morgan": "Washington, DC"
     }
 }
-

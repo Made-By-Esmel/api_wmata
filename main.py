@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 import time
 import json
 import requests
@@ -49,22 +49,21 @@ def test():
 def hello():
     return 'Hey there!'
 
-@app.route('/suggestions.json')
-def suggestions():
-    return '["Addison Road-Seat Pleasant","Anacostia","Archives-Navy Memorial-Penn Quarter","Arlington Cemetery","Ashburn","Ballston-MU","Benning Road","Bethesda","Braddock Road","Branch Ave","Brookland-CUA","Capitol Heights","Capitol South","Cheverly","Clarendon","Cleveland Park","College Park-U of Md","Columbia Heights","Congress Heights","Court House","Crystal City","Deanwood","Downtown Largo","Dunn Loring-Merrifield","Dupont Circle","East Falls Church","Eastern Market","Eisenhower Avenue","Farragut North","Farragut West","Federal Center SW","Federal Triangle","Foggy Bottom-GWU","Forest Glen","Fort Totten","Franconia-Springfield","Friendship Heights","Gallery Pl-Chinatown","Georgia Ave-Petworth","Glenmont","Greenbelt","Greensboro","Grosvenor-Strathmore","Herndon","Huntington","Hyattsville Crossing","Innovation Center","Judiciary Square","King St-Old Town","L\'Enfant Plaza","Landover","Loudoun Gateway","McLean","McPherson Square","Medical Center","Metro Center","Minnesota Ave","Morgan Boulevard","Mt Vernon Sq 7th St-Convention Center","Navy Yard-Ballpark","Naylor Road","New Carrollton","NoMa-Gallaudet U","North Bethesda","Pentagon","Pentagon City","Potomac Ave","Reston Town Center","Rhode Island Ave-Brentwood","Rockville","Ronald Reagan Washington National Airport","Rosslyn","Shady Grove","Shaw-Howard U","Silver Spring","Silver Spring Transit Center","Smithsonian","Southern Avenue","Spring Hill","Stadium-Armory","Suitland","Takoma","Tenleytown-AU","Twinbrook","Tysons","U Street/African-Amer Civil War Memorial/Cardozo","Union Station","Van Dorn Street","Van Ness-UDC","Vienna/Fairfax-GMU","Virginia Square-GMU","Washington Dulles International Airport","Waterfront","West Falls Church","West Hyattsville","Wheaton","Wiehle-Reston East","Woodley Park-Zoo/Adams Morgan" ]'
-
 @app.route('/station/<string:name>')
 def makeStationHTML(name):
     try:
         code = getIdFromStationName(name)
+        
         city = getCityFromStationName(name)
         rq = requests.get(makeRequestURL(code))
         # station_json = rq.json()["TRAINS"]
         raw = rq.text
-        return render_template('station.html', station=name, city=city, station_code=code, data_raw=raw, station_id=code)
+       
+        return render_template('station.html', station=name.replace("~", "/"), city=city, station_code=code, data_raw=raw, station_id=code)
     except KeyError:
-        return render_template('station.html', station="Whoops! That Station Doesn't Exist", station_code=":/")
-
+        # return render_template('station.html', station="Whoops! That Station Doesn't Exist", station_code=":/")
+          return redirect("/search")
+      
 # TODO: Add error handling
 @app.route('/backend/station/<string:code>')
 def backendDataGather(code):
@@ -72,3 +71,4 @@ def backendDataGather(code):
 
 
 app.run(host='0.0.0.0', port=81)
+ 
