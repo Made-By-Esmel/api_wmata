@@ -63,6 +63,11 @@ a {
   text-shadow: 0px 0px 0px transparent;
   transition: 300ms; }
 
+li {
+  color: #748cab;
+  font-family: 'Inter';
+  font-weight: 400; }
+
 a#search:hover {
   text-shadow: 0px 0px 4px white;
   color: white; }

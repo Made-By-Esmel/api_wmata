@@ -23,9 +23,8 @@ body {
   // background-color: $richblack;
     background: linear-gradient(-45deg, #001524 0%, #0D273E 100%);
     background-size: 200% 200%;
-X-Replit-User-Name
     animation: gradient 15s ease infinite;
-	height: 100vh;
+	  height: 100vh;
 }
     
 h1 {
@@ -102,6 +101,12 @@ a {
    // text-decoration-color: $electricblue;
    transition: $underline-delay;
   }
+
+li {
+  color: $shadowblue;
+  font-family: 'Inter';
+  font-weight: 400;
+}
   
 a#search:hover {
   // text-decoration-color: $shadowblue;

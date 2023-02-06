@@ -13,9 +13,23 @@
 
 <body>
     <form>
-        <label for="dropdown">Select an option:</label>
+        <label for="dropdown">Select a station:</label>
         <select id="dropdown" required>
-            <option value="" disabled selected>Select One</option>
+            <option value="" disabled selected></option>
+            <optgroup label="Popular Stations">
+            <option value="87">Union Station</option>
+            <option value="38">Gallery Pl-Chinatown</option>
+            <option value="56">Metro Center</option>
+            <option value="72">Rosslyn</option>
+            <option value="25">Dupont Circle</option>
+            <option value="50">L'Enfant Plaza</option>
+            <option value="65">Pentagon</option>
+            <option value="73">Shady Grove</option>
+            <option value="71">Ronald Reagan Washington National Airport</option>
+             <option value="92">Washington Dulles International Airport</option>
+              </optgroup>
+            <option value="" disabled selected></option>
+            <optgroup label="All Stations">
             <option value="1">Addison Road-Seat Pleasant</option>
             <option value="2">Anacostia</option>
             <option value="3">Archives-Navy Memorial-Penn Quarter</option>
@@ -26,6 +40,7 @@
             <option value="8">Bethesda</option>
             <option value="9">Braddock Road</option>
             <option value="10">Branch Ave</option>
+            <!--Popular options above-->
             <option value="11">Brookland-CUA</option>
             <option value="12">Capitol Heights</option>
             <option value="13">Capitol South</option>
@@ -114,8 +129,9 @@
             <option value="96">Wheaton</option>
             <option value="97">Wiehle-Reston East</option>
             <option value="98">Woodley Park-Zoo/Adams Morgan</option>
+              </optgroup>
         </select>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Go">
     </form>
 </body>
 <script src="/static/js/search.js"></script>

@@ -1,7 +1,9 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect #, after_request
 import time
 import json
 import requests
+
+
 
 def makeRequestURL(code: str) -> str:
     return f'https://www.wmata.com/components/stations.cfc?method=getNextTrains&StationCode={code}&returnFormat=JSON&_={int(time.time())}'
@@ -32,6 +34,10 @@ app = Flask(__name__)
 # FlaskJSON(app)
 app.config["JSON_ADD_STATUS"] = False
 
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    return response
 
 @app.route('/', methods=['GET'])
 def index():
@@ -44,6 +50,14 @@ def search():
 @app.route('/test', methods=['GET'])
 def test():
   return render_template("test.html")
+
+@app.route('/info', methods=['GET'])
+def info():
+  return render_template("info.html")
+
+@app.route('/main.py')
+def main():
+  return 'Nothing to see here...'
 
 @app.route('/hello')
 def hello():
