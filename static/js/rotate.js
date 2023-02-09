@@ -14,7 +14,7 @@ function updateJSONAndDump() {
             document.getElementById("rawData").innerText = xhr.responseText;
             renderJSON();
         } else {
-            console.log("Something Went Wrong");
+            console.log("Something Went Wrong...");
             // sourceUrlRoot = 'api.esmel.xyz';
         }
     }
@@ -54,13 +54,14 @@ function renderJSON() {
         
         let unit = document.createElement('span');
         unit.className = 'unit';
-        unit.innerText = typeof train_data.Min === 'number' ? "MIN" : ""; //TODO: Add functionality
+        unit.innerText = typeof train_data.Min === 'number' 
+    ? (train_data.Min === 1 ? "MIN" : "MINS") 
+    : (train_data.DLY ? "Delay" : "");
         let timeText = document.createTextNode(`${train_data.Min}\u00A0`);
         let timeCol = document.createElement('td');
         timeCol.className = train_data.Min;
         timeCol.append(timeText);
         timeCol.append(unit);
-
         let carsCol = document.createElement('td');
         carsCol.innerText = train_data.Car;
         
