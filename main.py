@@ -51,13 +51,17 @@ def search():
 def test():
   return render_template("test.html")
 
+@app.route('/station/')
+def station():
+  return redirect("/search")
+
 @app.route('/info', methods=['GET'])
 def info():
   return render_template("info.html")
 
 @app.route('/main.py')
 def main():
-  return 'Nothing to see here...'
+  return 'Eww, Python... We use Rust, don\'t worry...'
 
 @app.route('/hello')
 def hello():
@@ -84,5 +88,5 @@ def backendDataGather(code):
     return requests.get(makeRequestURL(code)).text
 
 
-app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=443)
  

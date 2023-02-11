@@ -39,7 +39,8 @@ body {
       appearance: none;
       font-family: "Poppins", sans-serif;
       text-align: center;
-      color: var(--text-color); }
+      color: var(--text-color);
+      cursor: pointer; }
     body form input[type="submit"] {
       margin-top: 16px;
       width: 200px;
