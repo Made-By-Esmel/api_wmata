@@ -120,12 +120,12 @@
             {
                 "name": "Willowbrook - Rosa Parks",
                 "destination": "Redondo Beach",
-                "line": ["C"]
+                "line": ["A","C"]
             },
             {
                 "name": "Willowbrook - Rosa Parks",
                 "destination": "Norwalk",
-                "line": ["C"]
+                "line": ["A","C"]
             }
         ],
         "80312": [
