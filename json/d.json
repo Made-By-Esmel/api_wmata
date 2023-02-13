@@ -48,12 +48,12 @@
           {
             "name": "7th Street / Metro Center",
             "destination": "Union Station",
-            "line": ["B","D"]
+            "line": ["A","B","D","E"]
           },
           {
             "name": "7th Street / Metro Center",
             "destination": "Wilshire / Western",
-            "line": ["B","D"]
+            "line": ["A","B","D","E"]
           }
         ],
         "80212": [

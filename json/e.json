@@ -202,7 +202,21 @@
         ],
         "80121": [
             {
-                "name": ""
+                "name": "Pico",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Pico",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80122": [
+            {
+                "name": "7th Street / Metro Center",
+                "destination": "Downtown Santa Monica",
+                "line": ["A","B","D","E"]
             }
         ]
     }
