@@ -1,0 +1,18 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80216": [
+            {
+                "name": "Wilshire / Western",
+                "destination": "Union Station",
+                "line": ["D"]
+            }
+        ],
+        "80215": [
+          {
+            "name": "Wilshire / Normandie",
+            "destination": "Union Station"
+          }
+        ]
+    }
+}

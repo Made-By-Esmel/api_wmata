@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "stations": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[0-9]{5}$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "destination",
+              "line"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "destination": {
+                "type": "string"
+              },
+              "line": {
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80301": [
+            {
+                "name": "Redondo Beach",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80302": [
+            {
+                "name": "Douglas",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Douglas",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80303": [
+            {
+                "name": "El Segundo",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "El Segundo",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80304": [
+            {
+                "name": "Mariposa",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Mariposa",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80305": [
+            {
+                "name": "Aviation / LAX",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Aviation / LAX",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80306": [
+            {
+                "name": "Hawthorne / Lennox",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Hawthorne / Lennox",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80307": [
+            {
+                "name": "Crenshaw",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Crenshaw",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80308": [
+            {
+                "name": "Vermont / Athens",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Vermont / Athens",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80309": [
+            {
+                "name": "Harbor Freeway",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Harbor Freeway",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80310": [
+            {
+                "name": "Avalon",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Avalon",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80311": [
+            {
+                "name": "Willowbrook - Rosa Parks",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Willowbrook - Rosa Parks",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80312": [
+            {
+                "name": "Long Beach Boulevard",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Long Beach Boulevard",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80313": [
+            {
+                "name": "Lakewood Boulevard",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            },
+            {
+                "name": "Lakewood Boulevard",
+                "destination": "Norwalk",
+                "line": ["C"]
+            }
+        ],
+        "80314": [
+            {
+                "name": "Norwalk",
+                "destination": "Redondo Beach",
+                "line": ["C"]
+            }
+        ]
+    }
+}

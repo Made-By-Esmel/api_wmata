@@ -1,0 +1,163 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80201": [
+            {
+                "name": "North Hollywood",
+                "destination": "Union Station",
+                "line": ["B"]
+            }
+        ],
+        "80202": [
+            {
+                "name": "Universal / Studio City",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Universal / Studio City",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80203": [
+            {
+                "name": "Hollywood / Highland",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Hollywood / Highland",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80204": [
+            {
+                "name": "Hollywood / Vine",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Hollywood / Vine",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80205": [
+            {
+                "name": "Hollywood / Western",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Hollywood / Western",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80206": [
+            {
+                "name": "Vermont / Sunset",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Vermont / Sunset",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80207": [
+            {
+                "name": "Vermont / Santa Monica",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Vermont / Santa Monica",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80208": [
+            {
+                "name": "Vermont / Beverly",
+                "destination": "Union Station",
+                "line": ["B"]
+            },
+            {
+                "name": "Vermont / Beverly",
+                "destination": "North Hollywood",
+                "line": ["B"]
+            }
+        ],
+        "80209": [
+            {
+                "name": "Wilshire / Vermont",
+                "destination": "Union Station",
+                "line": ["B","D"]
+            },
+            {
+                "name": "Wilshire / Vermont",
+                "destination": "North Hollywood",
+                "line": ["B","D"]
+            }
+        ],
+        "80210": [
+            {
+                "name": "Westlake / MacArthur Park",
+                "destination": "Union Station",
+                "line": ["B","D"]
+            },
+            {
+                "name": "Westlake / MacArthur Park",
+                "destination": "North Hollywood",
+                "line": ["B","D"]
+            }
+        ],
+        "80211": [
+            {
+                "name": "7th Street / Metro Center",
+                "destination": "Union Station",
+                "line": ["B","A","D","E"]
+            },
+            {
+                "name": "7th Street / Metro Center",
+                "destination": "North Hollywood",
+                "line": ["B","A","D","E"]
+            }
+        ],
+        "80212": [
+            {
+                "name": "Pershing Square",
+                "destination": "Union Station",
+                "line": ["B","D"]
+            },
+            {
+                "name": "Pershing Square",
+                "destination": "North Hollywood",
+                "line": ["B","D"]
+            }
+        ],
+        "80213": [
+            {
+                "name": "Civic Center / Grand Park",
+                "destination": "Union Station",
+                "line": ["B","D"]
+            },
+            {
+                "name": "Civic Center / Grand Park",
+                "destination": "North Hollywood",
+                "line": ["B","D"]
+            }
+        ],
+        "80214": [
+            {
+                "name": "Union Station",
+                "destination": "North Hollywood",
+                "line": ["B","D"]
+            }
+        ]
+    }
+}

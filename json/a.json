@@ -1,0 +1,244 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80101": [
+            {
+                "name": "Downtown Long Beach",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80102": [
+            {
+                "name": "Pacific Avenue",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80105": [
+            {
+                "name": "Anaheim Street",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Anaheim Street",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80106": [
+            {
+                "name": "Pacific Coast Highway",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Pacific Coast Highway",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80107": [
+            {
+                "name": "Willow Street",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Willow Street",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80108": [
+            {
+                "name": "Wardlow",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Wardlow",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80109": [
+            {
+                "name": "Del Amo",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Del Amo",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80110": [
+            {
+                "name": "Artesia",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Artesia",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80111": [
+            {
+                "name": "Compton",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Compton",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80112": [
+            {
+                "name": "Willowbrook - Rosa Parks",
+                "destination": "Downtown Long Beach",
+                "line": ["A", "C"]
+            },
+            {
+                "name": "Willowbrook - Rosa Parks",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80113": [
+            {
+                "name": "103rd Street / Watts Towers",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "103rd Street / Watts Towers",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80114": [
+            {
+                "name": "Firestone",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Firestone",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80115": [
+            {
+                "name": "Florence",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Florence",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80116": [
+            {
+                "name": "Slauson",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Slauson",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80117": [
+            {
+                "name": "Vernon",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Vernon",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80118": [
+            {
+                "name": "Washington",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Washington",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80119": [
+            {
+                "name": "San Pedro Street",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "San Pedro Street",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80120": [
+            {
+                "name": "Grand Avenue / LATTC",
+                "destination": "Downtown Long Beach",
+                "line": ["A"]
+            },
+            {
+                "name": "Grand Avenue / LATTC",
+                "destination": "7th Street / Metro Center",
+                "line": ["A"]
+            }
+        ],
+        "80121": [
+            {
+                "name": "Pico",
+                "destination": "Downtown Long Beach",
+                "line": ["A","E"]
+            },
+            {
+                "name": "Pico",
+                "destination": "7th Street / Metro Center",
+                "line": ["A","E"]
+            }
+        ],
+        "80122": [
+            {
+                "name": "7th Street / Metro Center",
+                "destination": "Downtown Long Beach",
+                "line":["A","B","D","E"]
+            }
+        ],
+        "80154": [
+            {
+                "name": "5th Street",
+                "destination": "Downtown Long Beach",
+                "line":["A"]
+            }
+        ],
+        "80153": [
+            {
+                "name": "1st Street",
+                "destination": "Downtown Long Beach",
+                "line":["A"]
+            }
+        ]
+    }
+}
