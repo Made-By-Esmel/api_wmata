@@ -2,11 +2,11 @@
     "$schema": "./a.schema.json",
     "stations": {
         "80216": [
-            {
-                "name": "Wilshire / Western",
-                "destination": "Union Station",
-                "line": ["D"]
-            }
+          {
+              "name": "Wilshire / Western",
+              "destination": "Union Station",
+              "line": ["D"]
+          }
         ],
         "80215": [
           {
@@ -24,48 +24,67 @@
           {
             "name": "Wilshire / Vermont",
             "destination": "Union Station",
-            "line": ["D"]
+            "line": ["B","D"]
           },
           {
             "name": "Wilshire / Vermont",
             "destination": "Wilshire / Western",
-            "line": ["D"]
+            "line": ["B","D"]
           }
         ],
         "80210": [
           {
             "name": "Westlake / MacArthur Park",
             "destination": "Union Station",
-            "line": ["D"]
+            "line": ["B","D"]
           },
           {
             "name": "Westlake / MacArthur Park",
-            "destination": "Wilshire / Vermont",
-            "line": ["D"]
+            "destination": "Wilshire / Western",
+            "line": ["B","D"]
           }
         ],
         "80211": [
           {
             "name": "7th Street / Metro Center",
             "destination": "Union Station",
-            "line": ["D"]
+            "line": ["B","D"]
           },
           {
             "name": "7th Street / Metro Center",
-            "destination": "Wilshire / Vermont",
-            "line": ["D"]
+            "destination": "Wilshire / Western",
+            "line": ["B","D"]
           }
         ],
         "80212": [
           {
             "name": "Pershing Square",
             "destination": "Union Station",
-            "line": ["D"]
+            "line": ["B","D"]
           },
           {
             "name": "Pershing Square",
-            "destination": "Wilshire / Vermont",
-            "line": ["D"]
+            "destination": "Wilshire / Western",
+            "line": ["B","D"]
+          }
+        ],
+        "80213": [
+          {
+            "name": "Civic Center / Grand Park",
+            "destination": "Union Station",
+            "line": ["B","D"]
+          },
+          {
+            "name": "Civic Center / Grand Park",
+            "destination": "Wilshire / Western",
+            "line": ["B","D"]
+          }
+        ],
+        "80214": [
+          {
+            "name": "Union Station",
+            "destination": "Wilshire / Western",
+            "line": ["B","D","L"]
           }
         ]
     }

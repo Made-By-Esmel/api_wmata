@@ -156,7 +156,7 @@
             {
                 "name": "Union Station",
                 "destination": "North Hollywood",
-                "line": ["B","D"]
+                "line": ["B","D","L"]
             }
         ]
     }

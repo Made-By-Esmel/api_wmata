@@ -1,0 +1,209 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80139": [
+          {
+              "name": "Downtown Santa Monica",
+              "destination": "7th Street / Metro Center",
+              "line": ["E"]
+          }
+        ],
+        "80138": [
+            {
+                "name": "17th Street / SMC",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "17th Street / SMC",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80137": [
+            {
+                "name": "26th Street / Bergamot",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "26th Street / Bergamot",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80136": [
+            {
+                "name": "Expo / Bundy",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo / Bundy",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80135": [
+            {
+                "name": "Expo / Sepulveda",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo / Sepulveda",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80134": [
+            {
+                "name": "Westwood / Rancho Park",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Westwood / Rancho Park",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80133": [
+            {
+                "name": "Palms",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Palms",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80132": [
+            {
+                "name": "Culver City",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Culver City",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80131": [
+            {
+                "name": "La Cienega / Jefferson",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "La Cienega / Jefferson",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80130": [
+            {
+                "name": "Expo / La Brea / Ethel Bradley",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo / La Brea / Ethel Bradley",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80129": [
+            {
+                "name": "Farmdale",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Farmdale",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80128": [
+            {
+                "name": "Expo / Crenshaw",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo / Crenshaw",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80127": [
+            {
+                "name": "Expo / Western",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo / Western",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80126": [
+            {
+                "name": "Expo / Vermont",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo / Vermont",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80125": [
+            {
+                "name": "Expo Park / USC",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Expo Park / USC",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80124": [
+            {
+                "name": "Jefferson / USC",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "Jefferson / USC",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80123": [
+            {
+                "name": "LATTC / Ortho Institute",
+                "destination": "Downtown Santa Monica",
+                "line": ["E"]
+            },
+            {
+                "name": "LATTC / Ortho Institute",
+                "destination": "7th Street / Metro Center",
+                "line": ["E"]
+            }
+        ],
+        "80121": [
+            {
+                "name": ""
+            }
+        ]
+    }
+}
