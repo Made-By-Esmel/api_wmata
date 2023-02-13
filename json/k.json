@@ -1,0 +1,79 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80703": [
+          {
+              "name": "Westchester / Veterans",
+              "destination": "Expo / Crenshaw",
+              "line": ["K"]
+          }
+        ],
+        "80704": [
+            {
+                "name": "Downtown Inglewood",
+                "destination": "Westchester / Veterans",
+                "line": ["K"]
+            },
+            {
+                "name": "Downtown Inglewood",
+                "destination": "Expo / Crenshaw",
+                "line": ["K"]
+            }
+        ],
+        "80705": [
+            {
+                "name": "Fairview Heights",
+                "destination": "Westchester / Veterans",
+                "line": ["K"]
+            },
+            {
+                "name": "Fairview Heights",
+                "destination": "Expo / Crenshaw",
+                "line": ["K"]
+            }
+        ],
+        "80706": [
+            {
+                "name": "Hyde Park",
+                "destination": "Westchester / Veterans",
+                "line": ["K"]
+            },
+            {
+                "name": "Hyde Park",
+                "destination": "Expo / Crenshaw",
+                "line": ["K"]
+            }
+        ],
+        "80707": [
+            {
+                "name": "Leimert Park",
+                "destination": "Westchester / Veterans",
+                "line": ["K"]
+            },
+            {
+                "name": "Leimert Park",
+                "destination": "Expo / Crenshaw",
+                "line": ["K"]
+            }
+        ],
+        "80708": [
+            {
+                "name": "Martin Luther King Jr",
+                "destination": "Westchester / Veterans",
+                "line": ["K"]
+            },
+            {
+                "name": "Martin Luther King Jr",
+                "destination": "Expo / Crenshaw",
+                "line": ["K"]
+            }
+        ],
+        "80709": [
+            {
+                "name": "Expo / Crenshaw",
+                "destination": "Westchester / Veterans",
+                "line": ["K","E"]
+            }
+        ]
+    }
+}
