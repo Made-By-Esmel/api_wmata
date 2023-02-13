@@ -204,12 +204,12 @@
             {
                 "name": "Pico",
                 "destination": "Downtown Santa Monica",
-                "line": ["E"]
+                "line": ["A","E"]
             },
             {
                 "name": "Pico",
                 "destination": "7th Street / Metro Center",
-                "line": ["E"]
+                "line": ["A","E"]
             }
         ],
         "80122": [
