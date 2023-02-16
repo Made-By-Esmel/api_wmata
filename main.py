@@ -88,5 +88,6 @@ def backendDataGather(code):
     return requests.get(makeRequestURL(code)).text
 
 
-app.run(host='0.0.0.0', port=443)
+# app.run(host='::', port=80)
+app.run(host='0.0.0.0', port=80)
  

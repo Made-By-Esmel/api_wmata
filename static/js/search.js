@@ -92,7 +92,7 @@ let stationMap = {
     "91": "/station/Virginia Square-GMU",
     "92": "/station/Washington Dulles International Airport",
     "93": "/station/Waterfront",
-    "94": "/station/West Falls Church",
+    "94": "/station/West Falls Church-VT~UVA",
     "95": "/station/West Hyattsville",
     "96": "/station/Wheaton",
     "97": "/station/Wiehle-Reston East",

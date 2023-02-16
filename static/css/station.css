@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;400;500;600;700;800&display=swap");
+@import url("cdn.api.esmel.xyz/fonts/style.css");
 @keyframes pop {
   from {
     background-color: #383439; }
@@ -18,9 +19,9 @@ h1 {
 h2 {
   text-align: center; }
   h2 code {
-    font-family: "Martian Mono", monospace;
-    font-size: 1em;
-    font-feature-settings: "zero", "ss01";
+    font-family: "mundial", sans-serif;
+    font-size: 100%;
+    letter-spacing: .75px;
     color: #d1603d;
     background-color: #302523;
     border-radius: 3px;
