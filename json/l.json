@@ -1,0 +1,98 @@
+{
+    "$schema": "./a.schema.json",
+    "stations": {
+        "80401": [
+            {
+                "name": "Atlantic",
+                "destination": "Pico / Aliso",
+                "line": ["L"]
+            }
+        ],
+        "80402": [
+            {
+                "name": "East LA Civic Center",
+                "destination": "Atlantic",
+                "line": ["L"]
+            },
+            {
+                "name": "East LA Civic Center",
+                "destination": "Pico / Aliso",
+                "line": ["L"]
+            }
+        ],
+        "80403": [
+            {
+                "name": "Maravilla",
+                "destination": "Atlantic",
+                "line": ["L"]
+            },
+            {
+                "name": "Maravilla",
+                "destination": "Pico / Aliso",
+                "line": ["L"]
+            }
+        ],
+        "80404": [
+            {
+                "name": "Indiana",
+                "destination": "Atlantic",
+                "line": ["L"]
+            },
+            {
+                "name": "Indiana",
+                "destination": "Pico / Aliso",
+                "line": ["L"]
+            }
+        ],
+        "80405": [
+            {
+                "name": "Soto",
+                "destination": "Atlantic",
+                "line": ["L"]
+            },
+            {
+                "name": "Soto",
+                "destination": "Pico / Aliso",
+                "line": ["L"]
+            }
+        ],
+        "80406": [
+            {
+                "name": "Mariachi Plaza / Boyle Heights",
+                "destination": "Atlantic",
+                "line": ["L"]
+            },
+            {
+                "name": "Mariachi Plaza / Boyle Heights",
+                "destination": "Pico / Aliso",
+                "line": ["L"]
+            }
+        ],
+        "80407": [
+            {
+                "name": "Pico / Aliso",
+                "destination": "Atlantic",
+                "line": ["L"]
+            }
+        ],
+        "80409": [
+            {
+                "name": "Union Station - Metro Gold Line",
+                "destination": "APU / Citrus College",
+                "line": ["L"]
+            }
+        ],
+        "80410": [
+            {
+                "name": "Chinatown",
+                "destination": "Union Station - Metro Gold Line",
+                "line": ["L"]
+            },
+            {
+                "name": "Chinatown",
+                "destination": "APU / Citrus College",
+                "line": ["L"]
+            }
+        ]
+    }
+}
