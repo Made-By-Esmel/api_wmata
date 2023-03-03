@@ -77,7 +77,7 @@
         ],
         "80409": [
             {
-                "name": "Union Station - Metro Gold Line",
+                "name": "Union Station",
                 "destination": "APU / Citrus College",
                 "line": ["L"]
             }
@@ -85,11 +85,59 @@
         "80410": [
             {
                 "name": "Chinatown",
-                "destination": "Union Station - Metro Gold Line",
+                "destination": "Union Station",
                 "line": ["L"]
             },
             {
                 "name": "Chinatown",
+                "destination": "APU / Citrus College",
+                "line": ["L"]
+            }
+        ],
+        "80411": [
+            {
+                "name": "Lincoln Heights / Cypress Park",
+                "destination": "Union Station",
+                "line": ["L"]
+            },
+            {
+                "name": "Lincoln Heights / Cypress Park",
+                "destination": "APU / Citrus College",
+                "line": ["L"]
+            }
+        ],
+        "80412": [
+            {
+                "name": "Heritage Square / Arroyo",
+                "destination": "Union Station",
+                "line": ["L"]
+            },
+            {
+                "name": "Heritage Square / Arroyo",
+                "destination": "APU / Citrus College",
+                "line": ["L"]
+            }
+        ],
+        "80413": [
+            {
+                "name": "Southwest Museum",
+                "destination": "Union Station",
+                "line": ["L"]
+            },
+            {
+                "name": "Southwest Museum",
+                "destination": "APU / Citrus College",
+                "line": ["L"]
+            }
+        ],
+        "80414": [
+            {
+                "name": "Highland Park",
+                "destination": "Union Station",
+                "line": ["L"]
+            },
+            {
+                "name": "Highland Park",
                 "destination": "APU / Citrus College",
                 "line": ["L"]
             }
