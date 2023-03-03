@@ -1,11 +1,9 @@
-let sourceUrlRoot = "api.dumbsheep123.repl.co";
-
 function updateJSONAndDump() {
 
     let station_code = document.getElementById("stationId").innerText;
     
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', `https://${sourceUrlRoot}/backend/station/${station_code}`);
+    xhr.open('POST', `https://wmata.esmel.workers.dev/backend/station/${station_code}`);
     xhr.send();
 
     xhr.onreadystatechange = function() {
@@ -14,8 +12,7 @@ function updateJSONAndDump() {
             document.getElementById("rawData").innerText = xhr.responseText;
             renderJSON();
         } else {
-            console.log("Something Went Wrong...");
-            // sourceUrlRoot = 'api.esmel.xyz';
+            // console.log("Something Went Wrong...");
         }
     }
 }

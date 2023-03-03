@@ -1,93 +1,99 @@
-from flask import Flask, render_template, redirect #, after_request
-import time
+from fastapi import FastAPI, Request
+from fastapi.responses import HTMLResponse, RedirectResponse, PlainTextResponse
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 import json
+import uvicorn
 import requests
 
-
+app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
 def makeRequestURL(code: str) -> str:
-    return f'https://www.wmata.com/components/stations.cfc?method=getNextTrains&StationCode={code}&returnFormat=JSON&_={int(time.time())}'
+  return f'https://wmata.esmel.workers.dev/backend/station/{code}'
 
 def formatUnits(mins) -> str:
-    if type(mins) == int:
-        return "MIN"
-    return ""
+  if type(mins) == int:
+    return "MIN"
+  return ""
 
 OCCU_MAP_STR = {
-    0: "No Data",
-    1: "Not Crowded",
-    2: "Somewhat Crowded",
-    3: "Full"
+  0: "No Data",
+  1: "Not Crowded",
+  2: "Somewhat Crowded",
+  3: "Full"
 }
 
 def getIdFromStationName(station_name: str) -> str:
-    with open('stations.json', 'r') as f:
-        id_file = json.load(f)['stations']
-        return id_file[station_name]
+  with open('stations.json', 'r') as f:
+    id_file = json.load(f)['stations']
+    return id_file[station_name]
+
+app.mount("/static", StaticFiles(directory='static'), name="static")
 
 def getCityFromStationName(station_name: str) -> str:
-    with open('stations.json', 'r') as f:
-        id_file = json.load(f)['cities']
-        return id_file[station_name]
+  with open('stations.json', 'r') as f:
+    id_file = json.load(f)['cities']
+    return id_file[station_name]
 
-app = Flask(__name__)
-# FlaskJSON(app)
-app.config["JSON_ADD_STATUS"] = False
-
-@app.after_request
-def add_cors_headers(response):
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    return response
-
-@app.route('/', methods=['GET'])
-def index():
-    return render_template("credits.html")
-
-@app.route('/search', methods=['GET'])
-def search():
-  return render_template("search.html")
-
-@app.route('/test', methods=['GET'])
-def test():
-  return render_template("test.html")
-
-@app.route('/station/')
-def station():
-  return redirect("/search")
-
-@app.route('/info', methods=['GET'])
-def info():
-  return render_template("info.html")
-
-@app.route('/main.py')
-def main():
-  return 'Eww, Python... We use Rust, don\'t worry...'
-
-@app.route('/hello')
-def hello():
-    return 'Hey there!'
-
-@app.route('/station/<string:name>')
-def makeStationHTML(name):
-    try:
-        code = getIdFromStationName(name)
-        
-        city = getCityFromStationName(name)
-        rq = requests.get(makeRequestURL(code))
-        # station_json = rq.json()["TRAINS"]
-        raw = rq.text
-       
-        return render_template('station.html', station=name.replace("~", "/"), city=city, station_code=code, data_raw=raw, station_id=code)
-    except KeyError:
-        # return render_template('station.html', station="Whoops! That Station Doesn't Exist", station_code=":/")
-          return redirect("/search")
-      
-# TODO: Add error handling
-@app.route('/backend/station/<string:code>')
-def backendDataGather(code):
-    return requests.get(makeRequestURL(code)).text
+@app.get('/', response_class=HTMLResponse)
+async def index(request: Request):
+  return templates.TemplateResponse("credits.html", {"request": request})
 
 
-# app.run(host='::', port=80)
-app.run(host='0.0.0.0', port=80)
- 
+@app.get('/search', response_class=HTMLResponse)
+async def search(request: Request):
+  return templates.TemplateResponse("search.html", {"request": request})
+
+
+@app.get('/test', response_class=HTMLResponse)
+async def test(request: Request):
+  return templates.TemplateResponse("test.html", {"request": request})
+
+
+@app.get('/station/', response_class=RedirectResponse)
+async def station():
+  return "/search"
+
+
+@app.get('/info', response_class=HTMLResponse)
+async def info(request: Request):
+  return templates.TemplateResponse("info.html", {"request": request})
+
+
+@app.get('/main.py')
+async def main():
+  return RedirectResponse(url="/")
+
+
+@app.get('/hello', response_class=PlainTextResponse)
+async def hello():
+  return 'Hey there!'
+
+@app.get('/creditsv2')
+async def crd():
+  return templates.TemplateResponse("creditsv2.html")
+
+
+@app.get('/station/{name}', response_class=HTMLResponse)
+async def makeStationHTML(request: Request, name: str):
+  try:
+    code = getIdFromStationName(name)
+
+    city = getCityFromStationName(name)
+    rq = requests.get(makeRequestURL(code))
+    raw = rq.text
+
+    return templates.TemplateResponse(
+      'station.html', {
+        "request": request,
+        "station": name.replace("~", "/"),
+        "city": city,
+        "station_code": code,
+        "data_raw": raw,
+        "station_id": code
+      })
+  except KeyError:
+    return RedirectResponse("/search")
+
+uvicorn.run(app, host="0.0.0.0", port=80)

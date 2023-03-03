@@ -17,6 +17,7 @@ $copper-red: #d1603d;
 $gold: #ddb967;
 $yellow: #ffb30f;
 $yellow-green: #d0e37f;
+$dly: #ed2939;
 
 // Extra colors
 $darker-black: #080708;
@@ -118,6 +119,10 @@ table {
 
     td.BRD {
         color: $gold;
+    }
+
+    td.DLY {
+      color: $dly;
     }
 
     tr {

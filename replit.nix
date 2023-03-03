@@ -1,5 +1,9 @@
 { pkgs }: {
   deps = [
+    pkgs.speedtest_cli
+    pkgs.hello
+    pkgs.sudo
+    pkgs.wrangler
     pkgs.openssh_with_kerberos
     pkgs.minify
     pkgs.gh

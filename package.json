@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "animate.css": "^4.1.1",
     "minify": "^9.1.0",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "wrangler": "^2.10.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4"

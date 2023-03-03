@@ -1,0 +1,25 @@
+# TODO: Add error handling
+# @app.get('/backend/station/{code}', response_class=PlainTextResponse)
+# async def backendDataGather(code: str):
+#     return requests.get(makeRequestURL(code)).text
+
+
+# @app.get('/backend/station/{code}', response_class=PlainTextResponse)
+# async def backendDataGather(code: str, origin: str = Header(None)):
+#   headers = {
+#     'Access-Control-Allow-Origin': origin,
+#     'Access-Control-Allow-Methods': 'GET,OPTIONS',
+#     'Access-Control-Allow-Headers': '*',
+#   }
+#   url = f'https://wmata.esmel.workers.dev/?c={code}'
+#   response = requests.get(url)
+#   return PlainTextResponse(content=response.text, headers=headers)
+
+
+# return templates.TemplateResponse('station.html', {"request": request, "station": "Whoops! That Station Doesn't Exist", "station_code": ":/"})
+
+# station_json = rq.json()["TRAINS"]
+
+
+
+# https://www.wmata.com/components/stations.cfc?method=getNextTrains&StationCode={code}&returnFormat=JSON&_={int(time.time())
